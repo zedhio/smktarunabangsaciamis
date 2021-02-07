@@ -1,0 +1,179 @@
+/*navbar*/
+.navbar-default.affix {
+	background-color: white !important;
+	border-color: rgba(34, 34, 34, 0.05);
+	animation: affixFadeIn 2s  ease-in;
+	-webkit-animation: affixFadeIn 2s;
+}
+
+
+@keyframes affixFadeIn
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-webkit-keyframes affixFadeIn 
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes FadeIn
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-webkit-keyframes FadeIn 
+{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.navbar-default
+{	
+	line-height:40px;
+	background:transparent !important;
+	border: 0px;
+	border-radius: 0px;	
+	font-weight: 400;
+	animation: FadeIn 2s  ease-in;
+	-webkit-animation: FadeIn 2s;
+}
+
+.navbar-default .navbar-nav>li{
+	min-width: 100px;
+	text-align: center;	
+}
+.navbar-default .navbar-nav>li:last-child{	
+	border-right: 0px;
+}
+.navbar-default .navbar-nav>li>a
+{		
+	line-height: 40px;
+	color: #3575d3;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	transition: all linear 0.2s;
+	-moz-transition: all linear 0.2s;
+	-ms-transition: all linear 0.2s;
+	-o-transition: all linear 0.2s;
+	-webkit-transition: all linear 0.2s;	
+}
+
+.navbar-default .navbar-toggle
+{
+	color: #fff;	
+}
+.navbar-default.affix .navbar-toggle
+{
+	color: #444444;	
+}
+.navbar-default .navbar-nav>li.active>a
+{
+	background: #fff;
+	color: #3575D3;
+}
+.navbar-default .navbar-toggle .icon-bar
+{
+	background: #fff;
+}
+.navbar-default .navbar-nav
+{
+	margin-top: 0px;
+}
+
+
+.navbar-default.affix .navbar-header .navbar-brand {
+	color: #949FCC;
+	font-size: 14px;
+}
+
+
+.navbar-default.affix .navbar-header .navbar-brand:hover,
+.navbar-default.affix .navbar-header .navbar-brand:focus {
+	color: #eb3812;
+}
+.navbar-default.affix .txt-cl{
+	display: block;	
+}
+.navbar-default .txt-cl{
+	display: block;
+}
+
+.navbar-default.affix  .btn-login-navbar{	
+	box-shadow: 0 0 0px 3px #649bde;	
+	color: #649bde;	
+}
+.navbar-default .btn-login-navbar
+{		
+	box-shadow: 0 0 0px 3px #649bde;    
+	background: #f6f6f617;
+	color: #649bde;
+}
+
+.navbar-default.affix .nav>li>a,
+.navbar-default.affix .nav>li>a:focus {
+	color: #3575d3;
+}
+.navbar-default.affix .nav>li>a:hover,
+.navbar-default.affix .nav>li>a:focus:hover {
+	color: #3575d3;
+}
+
+@media(max-width: 768px)
+{	
+	.btn-login-navbar{		
+		margin-left: 43%;
+		margin-right: 43%;		
+	}
+	.navbar-default .btn-login-navbar{
+		color: #444444;
+		box-shadow: 0 0 4px 3px #649bde;
+	}
+	.navbar-default .navbar-right{		
+		background: #fff;		
+	}
+	.navbar-default .navbar-nav>li>a{
+		color: #444444!important;
+	}
+}
+
+
+.navbar-default .navbar-nav>li>a {
+	position: relative;
+	display: inline-block;	
+	text-align: center;
+}
+
+
+.navbar-default .navbar-nav>li>a::after {
+	content: "";
+	position: absolute;
+}
+/*--- Green Box (box-c) ---*/
+.navbar-default .navbar-nav>li>a::after {
+	margin-top: 40px;
+	height: 1.5px !important;
+	width: 0%;	
+	left: 7%;
+	background-color: #3575d3;
+	transition: 0.4s ease-out all .1s;
+}
+.navbar-default .navbar-nav>li .active::after, .navbar-default.affix .navbar-nav>li .active::after{
+margin-top: 40px;
+	height: 1.5px !important;
+	width: 90%;		
+	background-color: #3575d3;
+	transition: 0.4s ease-out all .1s;	
+}
+.navbar-default .navbar-nav>li>a:hover::after, .navbar-default.affix .navbar-nav>li>a:hover::after{	
+	margin-top: 40px;
+	height: 1.5px !important;
+	width: 90%;		
+	background-color: #3575d3;
+	transition: 0.4s ease-out all .1s;	
+
+}

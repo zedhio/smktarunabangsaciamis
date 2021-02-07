@@ -1,0 +1,24 @@
+.skin-blue .main-header .navbar 
+{
+  background-color: #cddc39 !important;
+}
+.skin-blue .main-header .logo 
+{
+  background-color: #afb42b !important;
+  color: #fff;
+  border-bottom: 0 solid transparent;
+}
+.box.box-primary 
+{
+  border-top-color: #afb42b !important;
+}
+.btn-primary
+{
+  background-color: #afb42b;
+  border-color:#afb42b;
+}
+.btn-primary:hover
+{
+  background-color: #afb42b;
+  border-color:#afb42b; 
+}
